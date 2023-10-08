@@ -9,7 +9,7 @@ import (
 
 func NewAPIGatewaySession() *apigatewaymanagementapi.ApiGatewayManagementApi {
 	sess, _ := session.NewSession(&aws.Config{
-		Region:   aws.String(os.Getenv("AWS_REGION")),
+		Region:   aws.String(os.Getenv("REGION")),
 		Endpoint: aws.String(os.Getenv("API_ENDPOINT")),
 	})
 

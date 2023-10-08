@@ -43,7 +43,7 @@ export class SocketConstruct extends Construct {
                 IS_LOCAL: "false",
                 LOG_LEVEL: "DEBUG",
                 API_ENDPOINT: "<insert endpoint>",
-                AWS_REGION: "<insert region>"
+                REGION: "<insert region>"
             },
         });
 
