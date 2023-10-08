@@ -1,18 +1,19 @@
-# Serverless FHIR Patient Converter
+# API Gateway WebSocket Sample
 
-Purpose: Working example of using DynamoDB Streams, EventBridge Pipes and an Enrichment Lambda to convert a make-believe patient into a FHIR Patient.
+Purpose: Working example of using AWS API Gateway, DynamoDB and Lambda to implement a WebSocket
 
 ## Getting Started
 
 ### Deploying
 
-First off, install [Node.js](https://nodejs.org/en)
+1. Install [Node.js](https://nodejs.org/en)
+2. Install [Golang](https://go.dev/doc/install) 
 
 ```bash
 # install AWS CDK
 npm install -g aws-cdk
 # clone the repository
-cd serverless-fhir-patient-converter
+cd apigateway-websocket-sample
 npm install
 ```
 
@@ -32,6 +33,8 @@ cdk destroy
 
 ## Implementation
 
-You'll want to create a base patient record to work with. This one is a good sample.
+For a further and in-depth review of how to use this repository and what it supports, head on over the [Blog Article](https://binaryheap.com) <Article not complete but under construction>
 
-For a further and in-depth review of how to use this repository and what it supports, head on over the [Blog Article]()
+## State Machine
+
+![Diagram](./socket_diagram.png)
